@@ -4,8 +4,8 @@ const API_KEY = 'eEtqYNCIP7ebt8vg68SJ767UigqxKopyaNGkVagaPu6dQnsbOlJ0KEAK';
 axios.defaults.baseURL = 'https://api.pexels.com/v1/';
 axios.defaults.headers.common['Authorization'] = API_KEY;
 axios.defaults.params = {
-  orientation: 'landscape',
   per_page: 15,
+  orientation: 'landscape',
 };
 
 export const getImages = async (query, page) => {
